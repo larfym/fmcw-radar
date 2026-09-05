@@ -3,8 +3,8 @@ entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Andres/Desktop/Andres/UNC/Electrónica/Proyecto Integrador/informe/main.tex"
-(c:/Users/Andres/Desktop/Andres/UNC/Electrónica/Proyecto Integrador/informe/main.tex
+**"c:/Users/Andres/Desktop/Andres/UNC/ElectrÃ³nica/Proyecto Integrador/informe/main.tex"
+(c:/Users/Andres/Desktop/Andres/UNC/ElectrÃ³nica/Proyecto Integrador/informe/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\Andres\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
@@ -484,7 +484,7 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- (preambulo/dedicatoria.aux) (preambulo/agradecimientos.aux) (preambulo/resumen.aux) (preambulo/abstract.aux) (preambulo/resumo.aux) (preambulo/lista de acronimos.aux) (contenido/introduccion.aux) (contenido/marco teorico/radar FMCW.aux) (contenido/marco teorico/chirp.aux) (contenido/marco teorico/PLL.aux) (contenido/marco teorico/wilkinson.aux) (contenido/marco teorico/filtro hairpin.aux) (contenido/marco metodologico/descripcion del entorno de trabajo.aux) (contenido/marco metodologico/VCO.aux) (contenido/marco metodologico/filtrolazo.aux) (contenido/marco metodologico/wilinson.aux) (contenido/marco metodologico/filtro hairpin.aux) (contenido/marco metodologico/PLL.aux) (contenido/marco metodologico/alimentación.aux) (contenido/marco metodologico/encapsulado.aux) (contenido/marco metodologico/Sistema completo.aux) (resultados.aux
+ (preambulo/dedicatoria.aux) (preambulo/agradecimientos.aux) (preambulo/resumen.aux) (preambulo/abstract.aux) (preambulo/resumo.aux) (preambulo/lista de acronimos.aux) (contenido/introduccion.aux) (contenido/marco teorico/radar FMCW.aux) (contenido/marco teorico/chirp.aux) (contenido/marco teorico/PLL.aux) (contenido/marco teorico/wilkinson.aux) (contenido/marco teorico/filtro hairpin.aux) (contenido/marco metodologico/descripcion del entorno de trabajo.aux) (contenido/marco metodologico/VCO.aux) (contenido/marco metodologico/filtrolazo.aux) (contenido/marco metodologico/wilinson.aux) (contenido/marco metodologico/filtro hairpin.aux) (contenido/marco metodologico/PLL.aux) (contenido/marco metodologico/alimentaciÃ³n.aux) (contenido/marco metodologico/encapsulado.aux) (contenido/marco metodologico/Sistema completo.aux) (resultados.aux
 
 LaTeX Warning: Label `fig:hairpin_s11' multiply defined.
 
@@ -833,7 +833,7 @@ l.14
 
 ] [2]
 Overfull \hbox (1.96774pt too wide) in paragraph at lines 51--52
-[]\T1/cmr/m/n/12 El pro-to-ti-po se co-men-z� a di-se-�ar y de-sa-rro-llar den-tro de las ins-ta-la-cio-nes del LARFyM,
+[]\T1/cmr/m/n/12 El pro-to-ti-po se co-men-zó a di-se-ñar y de-sa-rro-llar den-tro de las ins-ta-la-cio-nes del LARFyM,
  []
 
 [3]) [4] [5
@@ -926,10 +926,10 @@ File: imagenes/respuesta bucle y VCO.png Graphic file (type png)
 <use imagenes/respuesta bucle y VCO.png>
 Package pdftex.def Info: imagenes/respuesta bucle y VCO.png  used on input line 48.
 (pdftex.def)             Requested size: 455.24411pt x 240.07141pt.
-<imagenes/imagen teórica ruido de fase.png, id=1158, 1027.84pt x 801.99625pt>
-File: imagenes/imagen teórica ruido de fase.png Graphic file (type png)
-<use imagenes/imagen teórica ruido de fase.png>
-Package pdftex.def Info: imagenes/imagen teórica ruido de fase.png  used on input line 58.
+<imagenes/imagen teÃ³rica ruido de fase.png, id=1158, 1027.84pt x 801.99625pt>
+File: imagenes/imagen teÃ³rica ruido de fase.png Graphic file (type png)
+<use imagenes/imagen teÃ³rica ruido de fase.png>
+Package pdftex.def Info: imagenes/imagen teÃ³rica ruido de fase.png  used on input line 58.
 (pdftex.def)             Requested size: 455.24411pt x 355.21678pt.
  [22 <./imagenes/respuesta bucle y VCO.png (PNG copy)>]
 <imagenes/Spurios teorico.png, id=1168, 1027.84pt x 764.8575pt>
@@ -937,7 +937,7 @@ File: imagenes/Spurios teorico.png Graphic file (type png)
 <use imagenes/Spurios teorico.png>
 Package pdftex.def Info: imagenes/Spurios teorico.png  used on input line 73.
 (pdftex.def)             Requested size: 455.24411pt x 338.76746pt.
- [23 <./imagenes/imagen teórica ruido de fase.png (PNG copy)>] [24 <./imagenes/Spurios teorico.png (PNG copy)>] [25]
+ [23 <./imagenes/imagen teÃ³rica ruido de fase.png (PNG copy)>] [24 <./imagenes/Spurios teorico.png (PNG copy)>] [25]
 <imagenes/detector de fase y bomba de carga.png, id=1190, 448.67625pt x 435.42674pt>
 File: imagenes/detector de fase y bomba de carga.png Graphic file (type png)
 <use imagenes/detector de fase y bomba de carga.png>
@@ -1278,7 +1278,7 @@ Package pdftex.def Info: imagenes/adisimpll_lock_time.png  used on input line 29
 (pdftex.def)             Requested size: 295.90588pt x 180.16719pt.
  [97 <./imagenes/adisimpll_lazo_cerrado.png (PNG copy)> <./imagenes/adisimpll_lock_time.png>]
 Overfull \hbox (21.17558pt too wide) in paragraph at lines 307--308
-[]\T1/cmr/m/n/12 Para el de-sa-rro-llo y si-mu-la-ci�n del PLL se uti-li-z� la pla-ca de eva-lua-ci�n EV-ADF4159EB3Z,
+[]\T1/cmr/m/n/12 Para el de-sa-rro-llo y si-mu-la-ción del PLL se uti-li-zó la pla-ca de eva-lua-ción EV-ADF4159EB3Z,
  []
 
 File: imagenes/EV-ADF4159EB3Z.png Graphic file (type png)
@@ -1296,9 +1296,9 @@ Package pdftex.def Info: imagenes/medicion_1550_1850.png  used on input line 332
 
 
 ]
-\openout2 = `"contenido/marco metodologico/alimentación.aux"'.
+\openout2 = `"contenido/marco metodologico/alimentaciÃ³n.aux"'.
 
- (contenido/marco metodologico/alimentación.tex
+ (contenido/marco metodologico/alimentaciÃ³n.tex
 Cap\'{\i }tulo 13.
 [102
 
@@ -1383,12 +1383,12 @@ Package pdftex.def Info: imagenes/interfaz_modulaciones.png  used on input line 
 (pdftex.def)             Requested size: 386.96027pt x 271.83493pt.
  [113] [114 <./imagenes/interfaz_modulaciones.png>] [115]
 Overfull \hbox (39.20825pt too wide) in paragraph at lines 183--183
-[]\T1/cmr/bx/n/20.74 C�lculo de pa-r�-me-tros pa-ra la ram-pa FMCW 
+[]\T1/cmr/bx/n/20.74 Cálculo de pa-rá-me-tros pa-ra la ram-pa FMCW 
  []
 
 [116]
 Overfull \hbox (29.39384pt too wide) in paragraph at lines 253--253
-[]\T1/cmr/bx/n/20.74 Simulaci�n de la mo-du-la-ci�n en ADI-simPLL 
+[]\T1/cmr/bx/n/20.74 Simulación de la mo-du-la-ción en ADI-simPLL 
  []
 
 <imagenes/simulaciones_adisim.png, id=1955, 552.26324pt x 316.18124pt>
@@ -1440,17 +1440,17 @@ File: imagenes/tension_control_sierra025ms.png Graphic file (type png)
 Package pdftex.def Info: imagenes/tension_control_sierra025ms.png  used on input line 354.
 (pdftex.def)             Requested size: 218.51521pt x 166.39063pt.
  [120 <./imagenes/tension_control1ms.png> <./imagenes/tension_control002ms.png> <./imagenes/tension_control_sierra1ms.png> <./imagenes/tension_control_sierra025ms.png>]
-<imagenes/comparaciónrampas.png, id=1998, 1129.21875pt x 423.08063pt>
-File: imagenes/comparaciónrampas.png Graphic file (type png)
-<use imagenes/comparaciónrampas.png>
-Package pdftex.def Info: imagenes/comparaciónrampas.png  used on input line 371.
+<imagenes/comparaciÃ³nrampas.png, id=1998, 1129.21875pt x 423.08063pt>
+File: imagenes/comparaciÃ³nrampas.png Graphic file (type png)
+<use imagenes/comparaciÃ³nrampas.png>
+Package pdftex.def Info: imagenes/comparaciÃ³nrampas.png  used on input line 371.
 (pdftex.def)             Requested size: 432.48051pt x 162.03761pt.
 <imagenes/ruido_fase_pll.png, id=2000, 799.48688pt x 517.18219pt>
 File: imagenes/ruido_fase_pll.png Graphic file (type png)
 <use imagenes/ruido_fase_pll.png>
 Package pdftex.def Info: imagenes/ruido_fase_pll.png  used on input line 388.
 (pdftex.def)             Requested size: 386.96027pt x 250.3201pt.
- [121 <./imagenes/comparaciónrampas.png (PNG copy)>]) [122 <./imagenes/ruido_fase_pll.png (PNG copy)>] [123
+ [121 <./imagenes/comparaciÃ³nrampas.png (PNG copy)>]) [122 <./imagenes/ruido_fase_pll.png (PNG copy)>] [123
 
 
 
@@ -1550,9 +1550,9 @@ File: imagenes/tension_control_sierra025ms.png Graphic file (type png)
 Package pdftex.def Info: imagenes/tension_control_sierra025ms.png  used on input line 316.
 (pdftex.def)             Requested size: 218.51521pt x 166.39063pt.
  [131]
-File: imagenes/comparaciónrampas.png Graphic file (type png)
-<use imagenes/comparaciónrampas.png>
-Package pdftex.def Info: imagenes/comparaciónrampas.png  used on input line 327.
+File: imagenes/comparaciÃ³nrampas.png Graphic file (type png)
+<use imagenes/comparaciÃ³nrampas.png>
+Package pdftex.def Info: imagenes/comparaciÃ³nrampas.png  used on input line 327.
 (pdftex.def)             Requested size: 386.96027pt x 144.9817pt.
  [132]) [133] [134
 
@@ -1605,7 +1605,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--19
 
 
 Underfull \hbox (badness 7740) in paragraph at lines 14--19
-\T1/cmr/m/it/12 ra-tory\T1/cmr/m/n/12 , Le-xing-ton, MA, USA, 2011. [En l�-nea]. Dis-po-ni-ble en: [][]$\T1/cmtt/m/n/12 https :
+\T1/cmr/m/it/12 ra-tory\T1/cmr/m/n/12 , Le-xing-ton, MA, USA, 2011. [En lí-nea]. Dis-po-ni-ble en: [][]$\T1/cmtt/m/n/12 https :
  []
 
 
@@ -1647,7 +1647,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--77
 ] (main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- (preambulo/dedicatoria.aux) (preambulo/agradecimientos.aux) (preambulo/resumen.aux) (preambulo/abstract.aux) (preambulo/resumo.aux) (preambulo/lista de acronimos.aux) (contenido/introduccion.aux) (contenido/marco teorico/radar FMCW.aux) (contenido/marco teorico/chirp.aux) (contenido/marco teorico/PLL.aux) (contenido/marco teorico/wilkinson.aux) (contenido/marco teorico/filtro hairpin.aux) (contenido/marco metodologico/descripcion del entorno de trabajo.aux) (contenido/marco metodologico/VCO.aux) (contenido/marco metodologico/filtrolazo.aux) (contenido/marco metodologico/wilinson.aux) (contenido/marco metodologico/filtro hairpin.aux) (contenido/marco metodologico/PLL.aux) (contenido/marco metodologico/alimentación.aux) (contenido/marco metodologico/encapsulado.aux) (contenido/marco metodologico/Sistema completo.aux) (resultados.aux) (conclusiones.aux) (bibliografia.aux) (referencias.aux))
+ (preambulo/dedicatoria.aux) (preambulo/agradecimientos.aux) (preambulo/resumen.aux) (preambulo/abstract.aux) (preambulo/resumo.aux) (preambulo/lista de acronimos.aux) (contenido/introduccion.aux) (contenido/marco teorico/radar FMCW.aux) (contenido/marco teorico/chirp.aux) (contenido/marco teorico/PLL.aux) (contenido/marco teorico/wilkinson.aux) (contenido/marco teorico/filtro hairpin.aux) (contenido/marco metodologico/descripcion del entorno de trabajo.aux) (contenido/marco metodologico/VCO.aux) (contenido/marco metodologico/filtrolazo.aux) (contenido/marco metodologico/wilinson.aux) (contenido/marco metodologico/filtro hairpin.aux) (contenido/marco metodologico/PLL.aux) (contenido/marco metodologico/alimentaciÃ³n.aux) (contenido/marco metodologico/encapsulado.aux) (contenido/marco metodologico/Sistema completo.aux) (resultados.aux) (conclusiones.aux) (bibliografia.aux) (referencias.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
