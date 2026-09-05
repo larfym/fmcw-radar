@@ -1,0 +1,171 @@
+\documentclass[12pt,a4paper,oneside]{book} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel} 
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\usepackage{graphicx}
+\graphicspath{{Imagenes/}}
+
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{siunitx}
+\usepackage{csquotes}
+\usepackage{titling}
+\usepackage[font=footnotesize]{caption}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{sectsty}
+\usepackage{subcaption}
+\usepackage{pdfpages}
+\usepackage[colorlinks=true, urlcolor=black, linkcolor=black]{hyperref} 
+
+
+\sectionfont{\LARGE}
+\subsectionfont{\Large}
+\subsubsectionfont{\large}
+
+\begin{document}
+
+% === CARÁTULA ===
+\input{preambulo/caratula}
+\null
+\thispagestyle{empty}
+\clearpage
+
+% ==========================================
+% FASE PRELIMINAR (Numeración Romana automática)
+% ==========================================
+\frontmatter 
+\pagestyle{plain} % Fuerza el número abajo en el centro para todas estas páginas
+
+\input{preambulo/acta aprobacion}
+\null
+\thispagestyle{empty}
+\clearpage
+
+\input{preambulo/director}
+\null
+\thispagestyle{empty}
+\clearpage
+
+\include{preambulo/dedicatoria}
+\null
+\clearpage
+\include{preambulo/agradecimientos}
+\null
+
+\clearpage
+\include{preambulo/resumen}
+\null
+
+\clearpage
+\include{preambulo/abstract}
+\null
+
+\clearpage
+\include{preambulo/resumo}
+\null
+
+\clearpage
+% --- Índices ---
+\clearpage
+\tableofcontents
+
+\clearpage
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+\clearpage
+\null
+\addcontentsline{toc}{chapter}
+{\listfigurename}
+\listoffigures
+\clearpage
+\null
+\include{preambulo/lista de acronimos} % Asegúrate de que la "P" %mayúscula o minúscula coincida con el nombre real de tu %carpeta
+
+
+% ==========================================
+% FASE PRINCIPAL (Numeración Arábiga automática)
+% ==========================================
+\mainmatter 
+% Nota: Aquí seguimos con pagestyle{plain}. Si quieres que los capítulos tengan
+% encabezado arriba, pon \pagestyle{headings} justo aquí.
+
+%--- Capítulos ---
+\include{contenido/introduccion}
+\clearpage
+\null
+\part{Marco Teórico}
+\clearpage
+\null
+\include{contenido/marco teorico/radar FMCW}
+\clearpage
+\null
+\include{contenido/marco teorico/chirp}
+\clearpage
+\null
+\include{contenido/marco teorico/PLL}
+\clearpage
+\null
+\include{contenido/marco teorico/wilkinson}
+\clearpage
+\null
+\include{contenido/marco teorico/filtro hairpin}
+\clearpage
+\null
+\part{Marco Metodológico}
+\clearpage
+\null
+\include{contenido/marco metodologico/descripcion del entorno de trabajo}
+\clearpage
+\null
+\include{contenido/marco metodologico/VCO}
+\clearpage
+\null
+\include{contenido/marco metodologico/filtrolazo}
+\clearpage
+\null
+\include{contenido/marco metodologico/wilinson}
+\clearpage
+\null
+\include{contenido/marco metodologico/filtro hairpin}
+\clearpage
+\null
+\include{contenido/marco metodologico/PLL}
+\clearpage
+\null
+\include{contenido/marco metodologico/alimentación}
+\clearpage
+\null
+\include{contenido/marco metodologico/encapsulado}
+\clearpage
+\null
+\include{contenido/marco metodologico/Sistema completo}
+\clearpage
+\null
+\part{Resultados}
+\clearpage
+\null
+\include{resultados}
+\clearpage
+\null
+\part{Conclusiones}
+\clearpage
+\null
+\include{conclusiones}
+\clearpage
+\null
+\part{Bibliografía y Referencias}
+% ==========================================
+% BIBLIOGRAFÍA
+% ==========================================
+\backmatter % Desactiva la numeración de capítulos para la bibliografía y anexos
+\include{bibliografia}
+\include{referencias}
+\clearpage
+\null
+\part{Anexo del Proyecto Integrador}
+
+\end{document}

@@ -1,0 +1,16 @@
+\chapter*{Resumen} 
+\addcontentsline{toc}{chapter}{Resumen}
+
+El desarrollo de sistemas de radar de onda continua modulada en frecuencia (FMCW) requiere como componente esencial un generador de chirp, capaz de producir una señal cuya frecuencia varía linealmente en el tiempo. La calidad de este generador impacta de manera directa en la resolución de distancia y velocidad del radar, condicionando su desempeño de forma significativa para la medición de distancias.
+
+En este trabajo se presenta el diseño, implementación y caracterización de un generador de chirp para radares FMCW, destinado a generar señales de barrido en frecuencia con los requerimientos solicitados para su integración en el sistema desarrollado en el Laboratorio de Radiofrecuencia y Microondas (LARFyM). El proyecto tiene por objetivo sintetizar una señal con un ancho de banda de barrido de 300 MHz —comprendida entre 1,55 GHz y 1,85 GHz— y un tiempo de barrido de 1 ms para perfiles en diente de sierra y 0,5 ms para perfiles triangulares. Para lograrlo, se emplea una arquitectura basada en un lazo de enganche de fase (PLL) utilizando el sintetizador de frecuencia ADF4159, un filtro de lazo activo con amplificador operacional, un oscilador controlado por tensión (VCO) y un divisor de potencia Wilkinson, complementados con un filtro pasabanda Hairpin en la etapa de salida para suprimir componentes espurias y armónicas no deseadas.
+
+En una primera etapa se realizan los cálculos teóricos y el modelado de cada uno de los bloques constitutivos, empleando herramientas de simulación especializadas como ADIsimPLL y Advanced Design System (ADS). Posteriormente, se lleva a cabo el diseño de las placas de circuito impreso (PCB) con control de impedancia en tecnología coplanar y microstrip, seguido por la fabricación, ensamblaje y caracterización experimental de cada módulo por separado. Finalmente, se integra el sistema completo y se valida su funcionamiento mediante mediciones de respuesta en frecuencia, tensión de control, linealidad de la rampa y ruido de fase. Los resultados obtenidos confirman el correcto desempeño del prototipo, validando su integración en el sistema radar del LARFyM.
+
+\vspace{1em}
+\noindent\textbf{Áreas Temáticas del Proyecto Integrador:} radiofrecuencia, microondas, sistemas de comunicaciones y radar.
+
+\noindent\textbf{Asignaturas:} Electrónica analógica 3, teoría del campo electromagnético y teoría de las comunicaciones. 
+
+
+\noindent\textbf{Palabras Claves:} Radar FMCW, generador de chirp, bucle de enganche de fase (PLL), oscilador controlado por tensión (VCO), filtro Hairpin.
