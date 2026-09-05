@@ -1,0 +1,58 @@
+\chapter{Introducción}
+El desarrollo de sistemas de radar de onda continua modulada en frecuencia (FMCW) requiere como componente esencial un generador de chirp, capaz de producir una señal cuya frecuencia varía linealmente en el tiempo. La calidad de este generador impacta de manera directa en la resolución de distancia y velocidad del radar, condicionando su desempeño de forma significativa para la medición de distancias.
+
+\section{Relevancia del trabajo}
+En la arquitectura FMCW, la resolución espacial en distancia del radar no depende de la duración de la transmisión, sino que está vinculada al ancho de banda del barrido del chirp. Un mayor ancho de banda permite alcanzar una mejor resolución en distancia para la discriminación de objetivos contiguos. Por otra parte, la precisión en la medición de la distancia está ligada a la linealidad geométrica de la rampa de frecuencia. Desviaciones en la pendiente del barrido degradan el espectro de la señal de batido, reduciendo la sensibilidad del radar. Por lo tanto, el desarrollo de un método de generación estable y lineal es un eslabón crítico para el correcto desempeño del radar en su conjunto.
+
+\section{Motivación para la elección del tema}
+La motivación para la realización de este Proyecto Integrador surge como continuación directa de las actividades de investigación desarrolladas durante la Práctica Supervisada en el Laboratorio de Radiofrecuencia y Microondas (LARFyM). En dicho marco, se planteó el proyecto integral de diseñar e implementar un radar FMCW de arquitectura propia. 
+
+Al concebir el sistema en su totalidad y dividirlo en diferentes bloques funcionales, se identificó la necesidad de contar con un generador de señales chirp a medida que cumpliera con las especificaciones de la aplicación. En consecuencia, la propuesta consistió en abordar el desarrollo de este prototipo funcional capaz de sintetizar la rampa de frecuencia requerida.
+
+\section{Formulación del problema}
+La síntesis directa de un chirp mediante un VCO libre presenta un inconveniente: la relación entre la tensión de sintonía aplicada y la frecuencia de salida del oscilador no es lineal y no necesariamente es igual para dos rampas consecutivas. Para corregir este comportamiento, es indispensable implementar un lazo cerrado mediante un PLL. No obstante, es necesario que el PLL sea capaz de engancharse rápidamente para saltos de frecuencia pequeños en intervalos de tiempo reducidos. 
+
+Por otro lado, los circuitos integrados PLL comerciales modernos operan con voltajes bajos (típicamente entre 3.3~V y 5~V) para reducir el consumo y la escala de integración, mientras que los VCO de alto rendimiento y rango extendido requieren tensiones de sintonización elevadas (de hasta 15~V o 30~V) para cubrir el ancho de banda deseado. Por lo tanto, se debe interconectar una interfaz de desplazamiento de nivel, implementada mediante un filtro activo, que permita controlar eficientemente el VCO de alto voltaje sin introducir ruido de fase excesivo.
+
+\section{Objetivos}
+
+\subsection{Objetivo General}
+Diseñar, implementar y caracterizar un generador de chirp para radar FMCW, destinado a generar señales de barrido en frecuencia con los requerimientos solicitados para su integración en el sistema radar desarrollado en el Laboratorio de Radiofrecuencia y Microondas (LARFyM).
+
+\subsection{Objetivos Específicos}
+\begin{itemize}
+    \item Definir las especificaciones del generador de chirp de acuerdo con los requerimientos del radar FMCW en desarrollo.
+    \item Diseñar la arquitectura general del sistema de generación de chirp basado en un PLL.
+    \item Calcular, diseñar y simular los distintos bloques que conforman el sistema, incluyendo el filtro de lazo, el VCO, el divisor y el filtro de salida.
+    \item Diseñar y desarrollar las placas de circuito impreso necesarias para la implementación del sistema.
+    \item Fabricar y ensamblar los bloques desarrollados anteriormente y verificar experimentalmente cada bloque por separado, evaluando su desempeño respecto de las especificaciones de diseño.
+    \item Configurar y programar el PLL, determinando los parámetros de división y temporización necesarios para obtener el perfil de barrido de frecuencia requerido.
+    \item Integrar los distintos bloques para conformar el generador de chirp completo.
+    \item Generar y caracterizar el chirp, verificando parámetros tales como ancho de banda y ruido de fase.
+    \item Validar el funcionamiento del sistema mediante mediciones y comparar los resultados obtenidos con las especificaciones definidas inicialmente.
+    \item Documentar el diseño, el proceso de implementación y los resultados obtenidos, generando la información necesaria para su posterior integración en el radar FMCW desarrollado en el LARFyM.
+\end{itemize}
+
+\section{Metodología utilizada para lograr los objetivos propuestos}
+Para cumplir las metas establecidas del proyecto, la metodología se estructura en cinco etapas:
+\begin{enumerate}
+    \item \textbf{Investigación Teórica y Selección de Componentes:} Estudio y análisis de las distintas arquitecturas disponibles en el mercado para la implementación del generador de chirp. Se evalúan y comparan las diferentes alternativas en términos de desempeño, complejidad de diseño, disponibilidad y costo. A partir de esta evaluación, se selecciona la arquitectura que mejor se adapta a los requerimientos del proyecto y a los recursos disponibles en el laboratorio, definiéndose posteriormente los componentes necesarios para su implementación.
+    
+    \item \textbf{Modelado y Simulación:} Empleo de herramientas de simulación especializadas para el diseño y validación de los distintos bloques del sistema. En particular, se utiliza ADIsimPLL de Analog Devices, o software equivalente, para el diseño del filtro de lazo y la determinación de los valores de sus componentes pasivos, así como para la evaluación del funcionamiento en modo triángulo y rampa del sintetizador. Adicionalmente, se emplea ADS (Advanced Design System) para el modelado y simulación de los circuitos de RF, incluyendo el VCO, el divisor de potencia y el filtro de salida, permitiendo optimizar su desempeño antes de la etapa de fabricación.
+ 
+    \item \textbf{Diseño de Hardware:} Diseño de las placas de circuito impreso (PCB). Esta etapa incluye el trazado de las líneas de RF, asegurando el control de su impedancia para una adecuada adaptación. El diseño se realiza mediante herramientas de diseño asistido por computadora (CAD).
+ 
+    \item \textbf{Ensamblaje y Pruebas Preliminares:} Montaje de los componentes sobre las placas de circuito impreso elaboradas previamente y verificación inicial del correcto funcionamiento de cada bloque del sistema. Se realizan pruebas para validar la correcta operación de los circuitos implementados.
+    
+    \item \textbf{Validación Experimental:} Integración de los distintos bloques desarrollados para conformar el generador de chirp completo. Se realiza la configuración y programación del PLL, determinando los parámetros de división y temporización necesarios para obtener el barrido de frecuencia requerido. Posteriormente, se efectúan mediciones sobre la señal generada, evaluando parámetros tales como frecuencia de operación, ancho de banda, linealidad del barrido, potencia de salida y ruido de fase. Finalmente, los resultados obtenidos se comparan con las especificaciones de diseño y las simulaciones realizadas, con el fin de validar el correcto funcionamiento del sistema.
+\end{enumerate}
+
+\section{Lugar de trabajo}
+El prototipo se comenzó a diseñar y desarrollar dentro de las instalaciones del LARFyM, durante las prácticas profesionales supervisadas, y el desarrollo se completa en el mismo lugar. El laboratorio cuenta con todas las herramientas necesarias para el correcto desarrollo del prototipo, así como también con el instrumental para la realización de diversas pruebas y ensayos.
+
+\section{Orientación al lector de la organización del texto}
+La primera parte del informe presenta el marco teórico necesario para comprender el funcionamiento de un generador de chirp para radares FMCW basado en un sintetizador de frecuencia PLL. En el primer capítulo se introducen los fundamentos de los radares FMCW, describiendo el principio de funcionamiento de la técnica de modulación por barrido lineal de frecuencia y los parámetros que caracterizan a la señal chirp. El segundo capítulo aborda los conceptos teóricos relacionados con los sintetizadores de frecuencia PLL, detallando el funcionamiento de sus principales bloques constitutivos, tales como el detector de fase, el filtro de lazo, el oscilador controlado por tensión (VCO) y los divisores de frecuencia. Finalmente, el tercer capítulo desarrolla los aspectos teóricos asociados a los circuitos de radiofrecuencia complementarios utilizados en el sistema, incluyendo divisores de potencia, filtros y consideraciones de diseño sobre líneas de transmisión e impedancia controlada.
+
+La segunda parte comprende el desarrollo metodológico seguido para la implementación del generador de chirp. En ella se describen las herramientas de simulación y diseño empleadas, así como el procedimiento utilizado para el dimensionamiento y validación de cada uno de los bloques que conforman el sistema. Posteriormente, se presenta el diseño de hardware, la fabricación de las placas de circuito impreso y el ensamblaje de los distintos módulos. Finalmente, se detallan las pruebas experimentales realizadas sobre cada bloque de manera individual y sobre el sistema integrado, incluyendo la configuración y programación del PLL para la generación del perfil de barrido de frecuencia requerido.
+
+Por último, se exponen los resultados obtenidos a partir de las mediciones realizadas sobre el generador de chirp implementado, evaluando parámetros tales como ancho de banda, linealidad del barrido, potencia de salida y ruido de fase. A partir de estos resultados se presentan las conclusiones del trabajo y se analizan las posibilidades de integración del sistema desarrollado en el radar FMCW del LARFyM.
