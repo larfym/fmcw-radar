@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      Andres
+HostName                       Andresces
+ProcessIdentifier              15212
+ProcessCreationTime_UTC        1760664957
+ProcessCreationTime_Readable   10/16/25 22:35:57 Hora est·ndar de Argentina
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         C:\Users\Andres\Desktop\Andres\UNC\Electr√≥nica\Proyecto Integrador\PS\Simulaciones\PLL_VCO_wrk\PLL_VCO1_lib\%P%L%L_%V%C%O1\layout\layout.oa.cdslck
+TimeEditLocked                 10/16/25 22:39:08 Hora est·ndar de Argentina

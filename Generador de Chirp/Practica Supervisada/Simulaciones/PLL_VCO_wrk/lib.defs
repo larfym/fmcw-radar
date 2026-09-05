@@ -1,0 +1,5 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+DEFINE PLL_VCO_lib PLL_VCO_lib
+ASSIGN PLL_VCO_lib libMode shared
+DEFINE PLL_VCO1_lib PLL_VCO1_lib
+ASSIGN PLL_VCO1_lib libMode shared
