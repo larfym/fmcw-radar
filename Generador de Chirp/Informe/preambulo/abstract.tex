@@ -1,0 +1,15 @@
+\chapter*{Abstract} 
+\addcontentsline{toc}{chapter}{Abstract}
+
+The development of Frequency-Modulated Continuous-Wave (FMCW) radar systems requires as an essential component a chirp generator, capable of producing a signal whose frequency varies linearly in time. The quality of this generator directly impacts the range and velocity resolution of the radar, significantly conditioning its performance for distance measurement.
+
+This work presents the design, implementation, and characterization of a chirp generator for FMCW radars, intended to generate frequency sweep signals with the required specifications for its integration into the system developed at the Radio Frequency and Microwave Laboratory (LARFyM). The project aims to synthesize a signal with a sweep bandwidth of 300 MHz —ranging between 1.55 GHz and 1.85 GHz— and a sweep time of 1 ms for sawtooth profiles and 0.5 ms for triangular profiles. To achieve this, an architecture based on a Phase-Locked Loop (PLL) is employed using the ADF4159 frequency synthesizer, an active loop filter with an operational amplifier, a Voltage Controlled Oscillator (VCO), and a Wilkinson power divider, complemented by an output Hairpin bandpass filter to suppress undesired spurious and harmonic components.
+
+In a first stage, theoretical calculations and modeling of each constituent block are performed, employing specialized simulation tools such as ADIsimPLL and Advanced Design System (ADS). Subsequently, the design of printed circuit boards (PCBs) with impedance control in coplanar and microstrip technology is carried out, followed by the fabrication, assembly, and experimental characterization of each module separately. Finally, the complete system is integrated, and its operation is validated through measurements of frequency response, control voltage, sweep linearity, and phase noise. The obtained results confirm the correct performance of the prototype, validating its integration into the LARFyM radar system.
+
+\vspace{1em}
+\noindent\textbf{Thematic Areas:} radio frequency, microwaves, communication systems, and radar.
+
+\noindent\textbf{Subjects:} Analog Electronics III, Electromagnetic Field Theory, and Communication Theory. 
+
+\noindent\textbf{Keywords:} FMCW radar, chirp generator, Phase-Locked Loop (PLL), Voltage Controlled Oscillator (VCO), Hairpin filter.
